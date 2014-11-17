@@ -185,36 +185,36 @@ var Skype = new function () {
 		} else {
 			if (navigator.userAgent.indexOf("iPad") !== -1) {
 				this.IsPad = true;
-				this.detectedPlatform = "iPad " + this.detectedPlatform
+				this.detectedPlatform = "iPad " + this.detectedPlatform;
 			} else {
 				if (navigator.userAgent.indexOf("iPod") !== -1) {
 					this.IsPod = true;
-					this.detectedPlatform = "iPod " + this.detectedPlatform
+					this.detectedPlatform = "iPod " + this.detectedPlatform;
 				}
 			}
 		} if (navigator.userAgent.indexOf("MSIE 10") !== -1) {
 			this.isIE10 = true;
-			this.detectedBrowser = "Internet Explorer 10"
+			this.detectedBrowser = "Internet Explorer 10";
 		} else {
 			if (navigator.userAgent.indexOf("MSIE 9") !== -1) {
 				this.isIE9 = true;
-				this.detectedBrowser = "Internet Explorer 9"
+				this.detectedBrowser = "Internet Explorer 9";
 			} else {
 				if (navigator.userAgent.indexOf("MSIE 8") !== -1) {
 					this.isIE8 = true;
-					this.detectedBrowser = "Internet Explorer 8"
+					this.detectedBrowser = "Internet Explorer 8";
 				} else {
 					if (navigator.userAgent.indexOf("MSIE 7") !== -1) {
 						this.isIE7 = true;
-						this.detectedBrowser = "Internet Explorer 7"
+						this.detectedBrowser = "Internet Explorer 7";
 					} else {
 						if (navigator.userAgent.indexOf("MSIE 6") !== -1) {
 							this.isIE6 = true;
-							this.detectedBrowser = "Internet Explorer 6"
+							this.detectedBrowser = "Internet Explorer 6";
 						} else {
 							if (navigator.userAgent.indexOf("Firefox") !== -1) {
 								this.isFF = true;
-								this.detectedBrowser = "Firefox"
+								this.detectedBrowser = "Firefox";
 							} else {
 								if (navigator.userAgent.indexOf("Chrome") !== -1) {
 									this.isChrome = true;
@@ -236,13 +236,13 @@ var Skype = new function () {
 				}
 			}
 		} if (this.isLinux) {
-			this.useDetection = "false"
+			this.useDetection = "false";
 		}
 		if (this.isAndroid) {
-			this.SkypeClientDownloadUrl = "market://details?id=com.skype.raider"
+			this.SkypeClientDownloadUrl = "market://details?id=com.skype.raider";
 		} else {
 			if (this.isIOS6 || this.isIOS5 || this.isIOS4) {
-				this.SkypeClientDownloadUrl = "itms-apps://itunes.com/apps/skype"
+				this.SkypeClientDownloadUrl = "itms-apps://itunes.com/apps/skype";
 			}
 		}
 
@@ -825,7 +825,7 @@ var Skype = new function () {
 			}, 2000)
 		}
 	}();
-	
+
 /*jshint +W003:true */
 /*jshint +W107:true */
 /*jshint +W057:true */
